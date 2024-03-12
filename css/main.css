@@ -49,13 +49,13 @@ main {
 .projectsContainer {
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
 .projectsContainer .project {
     padding: 1em 1em 1em 0em;
     position: relative;
-    height: 300px;
+    height: 450px;
 }
 
 .projectsContainer iframe {
@@ -69,6 +69,7 @@ main {
     height: 80%;
     text-align: center;
     border-radius: .3em;
+    margin-bottom: 5px;
 }
 
 .projectsContainer img {
