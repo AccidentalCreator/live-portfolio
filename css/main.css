@@ -55,7 +55,7 @@ main {
 .projectsContainer .project {
     padding: 1em 0em;
     position: relative;
-    height: 450px;
+    aspect-ratio: 1;
 }
 
 .projectsContainer iframe {
