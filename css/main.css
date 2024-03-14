@@ -64,6 +64,10 @@ main {
     height: 80%;
 }
 
+.projectsContainer h4 {
+    margin-top: 5px;
+}
+
 .imageContainer {
     background-color: black;
     height: 80%;
