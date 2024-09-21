@@ -102,6 +102,10 @@ main {
     margin-bottom: 5px;
 }
 
+#colourDropDrop {
+    background-color: white;
+}
+
 .projectsContainer img {
     height: 100%;
 }
