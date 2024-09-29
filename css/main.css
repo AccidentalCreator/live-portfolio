@@ -41,14 +41,19 @@ h1 {
 .hover-underline-animation::after {
     content: '';
     position: absolute;
-    width: calc(100% - 25px);
+    width: 100%;
     transform: scaleX(0);
     height: 2px;
     bottom: 0;
-    left: 25px;
+    left: 0;
     background-color: #000000;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation.with-offset::after {
+    width: calc(100% - 25px);
+    left: 25px;
 }
 
 .hover-underline-animation:hover::after {
@@ -113,4 +118,17 @@ main {
 
 .projectDescription {
     color: gray;
+}
+
+details {
+    cursor: pointer;
+}
+
+details summary {
+    color: dimgrey;
+    list-style-type: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
 }
