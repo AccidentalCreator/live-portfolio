@@ -91,7 +91,7 @@ h3 {
 .projectsContainer {
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .projectsContainer .project {
@@ -126,16 +126,11 @@ h3 {
     width: 50%;
 }
 
-.projectsContainer img {
-    /* width: 50%; */
-}
-
 #rayTracerContainer {
     background-color: black;
 }
 
 #rayTracerImg {
-    /* height: 80%; */
     height: 100%;
     width: auto;
 }
