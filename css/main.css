@@ -142,3 +142,14 @@ details summary {
 details summary::-webkit-details-marker {
     display: none;
 }
+
+#about-me {
+    background-color: lightblue;
+}
+
+#about-me img {
+    width: 250px;
+    height: 250px;
+    margin: 0px 0px 15px 15px;
+    float: right;
+}
