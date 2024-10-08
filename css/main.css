@@ -162,3 +162,31 @@ details summary::-webkit-details-marker {
     margin: 0px 15px;
     float: right;
 }
+
+@media (max-width: 460px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav h1 {
+        order: 2;
+    }
+
+    h1.nav-item {
+        font-size: x-large;
+    }
+
+    nav ul {
+        order: 1;
+    }
+
+    #nav-list {
+        margin-bottom: 20px;
+    }
+
+    #nav-list li:first-child {
+        padding-left: 0;
+    }
+
+}
