@@ -148,6 +148,10 @@ details summary {
     list-style-type: none;
 }
 
+details p {
+    color: dimgrey;
+}
+
 details summary::-webkit-details-marker {
     display: none;
 }
