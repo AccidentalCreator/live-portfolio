@@ -156,6 +156,11 @@ details summary::-webkit-details-marker {
     display: none;
 }
 
+a {
+    text-decoration: none;
+    color: dimgrey;
+}
+
 #about-me {
     max-width: 650px;
 }
