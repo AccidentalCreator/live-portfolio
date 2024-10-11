@@ -150,6 +150,7 @@ details summary {
 
 details p {
     color: dimgrey;
+    cursor: default;
 }
 
 details summary::-webkit-details-marker {
