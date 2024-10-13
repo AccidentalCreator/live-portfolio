@@ -158,7 +158,10 @@ details summary::-webkit-details-marker {
 }
 
 a {
-    text-decoration: none;
+    color: black;
+}
+
+details a {
     color: dimgrey;
 }
 
