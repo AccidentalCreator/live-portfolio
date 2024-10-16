@@ -42,6 +42,10 @@ h1 {
     padding-left: 25px;
 }
 
+#nav-list li a {
+    text-decoration: none;
+}
+
 .hover-underline-animation {
     display: inline-block;
     position: relative;
