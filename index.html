@@ -6,22 +6,24 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Archie Charach Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <nav>
         <h1 class="nav-item">Archie Charach</h1>
         <ul id="nav-list" class="nav-item">
             <li class="hover-underline-animation with-offset">
+                <a class="navigate-down" id="button-projects">Projects</a>
+            </li>
+            <li class="hover-underline-animation with-offset">
+                <a class="navigate-down" id="button-about">About</a>
+            </li>
+            <li class="hover-underline-animation with-offset">
+                <a class="navigate-down" id="button-contact">Contact</a>
+            </li>
+            <li class="hover-underline-animation with-offset">
                 <a href="resources/ArchieCharachCV.pdf" target="_blank">CV</a>
-            </li>
-            <li class="hover-underline-animation with-offset">
-                <a class="navigate-down" href="#section-projects">Projects</a>
-            </li>
-            <li class="hover-underline-animation with-offset">
-                <a class="navigate-down" href="#section-about">About</a>
-            </li>
-            <li class="hover-underline-animation with-offset">
-                <a class="navigate-down" href="#section-contact">Contact</a>
             </li>
         </ul>
     </nav>
@@ -32,191 +34,195 @@
     </h2>
     <main>
         <!-- Section: Projects -->
-        <h3 id="section-projects">Personal Projects, 2016 - 2024</h3>
-        <div class="projectsContainer">
-            <div class="project">
-                <div id="colourDropDropContainer" class="imageContainer">
-                    <img id="colourDropDropImg" src="resources/ColourDropDrop.png" alt="Colour Drop Drop image">
+        <div id="section-projects">
+            <h3>Personal Projects, 2016 - 2024</h3>
+            <div class="projectsContainer">
+                <div class="project">
+                    <div id="colourDropDropContainer" class="imageContainer">
+                        <img id="colourDropDropImg" src="resources/ColourDropDrop.png" alt="Colour Drop Drop image">
+                    </div>
+                    <h4>Colour Drop Drop</h4>
+                    <p class="projectDescription">Mobile Game
+                        <br>
+                        Godot
+                    </p>
+                    <details>
+                        <summary class="hover-underline-animation">More Info</summary>
+                        <p>
+                            <br>
+                            Colour Drop Drop is an incredibly engaging brain teaser. A simple yet challenging puzzle game that will put your strategic thinking to the test. Sharpen your mind and enhance your cognitive skills with this captivating game.<br><br>
+                            Developed in Godot using the Godot engine.<br><br>
+                            Currently in beta testing via TestFlight and to soon be released on the Apple App store.<br><br>
+                            <a href="https://accidentalcreator.github.io/MountainMooseGames/" target="_blank">Mountain Moose Games Website</a>
+                        </p>
+                    </details>
                 </div>
-                <h4>Colour Drop Drop</h4>
-                <p class="projectDescription">Mobile Game
-                    <br>
-                    Godot
-                </p>
-                <details>
-                    <summary class="hover-underline-animation">More Info</summary>
-                    <p> 
+                <div class="project">
+                    <iframe class="projectVideo"
+                    src="https://www.youtube.com/embed/GuhJuZtUG9M">
+                    </iframe>
+                    <h4>Brookland Museum Aviation Game</h4>
+                    <p class="projectDescription">Mobile Game
                         <br>
-                        Colour Drop Drop is an incredibly engaging brain teaser. A simple yet challenging puzzle game that will put your strategic thinking to the test. Sharpen your mind and enhance your cognitive skills with this captivating game.<br><br>
-                        Developed in Godot using the Godot engine.<br><br>
-                        Currently in beta testing via TestFlight and to soon be released on the Apple App store.<br><br>
-                        <a href="https://accidentalcreator.github.io/MountainMooseGames/" target="_blank">Mountain Moose Games Website</a>
+                        C#, Unity
                     </p>
-                </details>
-            </div>
-            <div class="project">
-                <iframe class="projectVideo"
-                src="https://www.youtube.com/embed/GuhJuZtUG9M">
-                </iframe>
-                <h4>Brookland Museum Aviation Game</h4>
-                <p class="projectDescription">Mobile Game
-                    <br>
-                    C#, Unity
-                </p>
-                <details>
-                    <summary class="hover-underline-animation">More Info</summary>
-                    <p>
-                        <br>
-                        Commissioned by Brooklands Museum I developed this game which comprises eight mini games.<br><br>
-                        Each mini-game represents a different stage in the airplane manufacturing process to go alongside the Award Winning Brooklands Aircraft Factory Exhibition.<br><br>
-                        Within the education sector the video game industry is growing rapidly as a fun, creative and original way to learn. If the audience enjoys playing the game, they are more likely to remember the information. With this in mind I designed a game specifically for children aged 8 to 12, to enhance their intake of knowledge and overall museum experience.<br><br>
-                        This mobile game was developed using Unity and C# and compatible for both iOS and Android devices.
-                    </p>
-                </details>
-            </div>
-            <div class="project">
-                <iframe class="projectVideo"
-                src="https://www.youtube.com/embed/DoYj7QOXeLM">
-                </iframe>
-                <h4>3D Game Engine</h4>
-                <p class="projectDescription">Desktop Application
-                    <br>
-                    C++, OpenGL
-                </p>
-                <details>
-                    <summary class="hover-underline-animation">More Info</summary>
-                    <p>
-                        <br>
-                        This project has been programmed in C++ and supports a 3D environment using the OpenGL framework.<br><br>
-                        The architecture of the game engine is a component entity system.<br><br>
-                        The game engine has many built in features such as: mesh renderer, texture renderer, input handler, static mesh collision, box collision, sound handler, orthographic GUI capabilities plus many more...<br><br>
-                        Here is a video demonstration of a simple game built to show off the engine.<br><br>
-                    </p>
-                </details>
-            </div>
-            <div class="project">
-                <iframe class="projectVideo"
-                src="https://www.youtube.com/embed/8m52kWKeHdc">
-                </iframe>
-                <h4>AI Pathfinding Demo</h4>
-                <p class="projectDescription">Desktop Application
-                    <br>
-                    C++, SDL2
-                </p>
-                <details>
-                    <summary class="hover-underline-animation">More Info</summary>
-                    <p>
-                        <br>
-                        This project is programmed in C++ using SDL2.<br><br>
-                        The user places the start (green) and end (red) nodes of the path. The AI will then produce a path using the selected algorithm.<br><br>
-                        Supported path finding algorithms included: Breadth First, Depth First, Best First and A*.<br><br>
-                        The agent will travel along the given path to its destination. This is shown by the white dots. Squares with a blue outline have been searched.<br><br>
-                        Walls can be placed (yellow squares) as well as water (blue squares). Walls cannot be walked through and water adds an extra movement cost therefore avoided if a cheaper path is available (only in A*).
-                    </p>
-                </details>
-            </div>
-            <div class="project">
-                <div id="rayTracerContainer" class="imageContainer">
-                    <img id="rayTracerImg" src="resources/RayTracer.png" alt="Ray Tracer image">
+                    <details>
+                        <summary class="hover-underline-animation">More Info</summary>
+                        <p>
+                            <br>
+                            Commissioned by Brooklands Museum I developed this game which comprises eight mini games.<br><br>
+                            Each mini-game represents a different stage in the airplane manufacturing process to go alongside the Award Winning Brooklands Aircraft Factory Exhibition.<br><br>
+                            Within the education sector the video game industry is growing rapidly as a fun, creative and original way to learn. If the audience enjoys playing the game, they are more likely to remember the information. With this in mind I designed a game specifically for children aged 8 to 12, to enhance their intake of knowledge and overall museum experience.<br><br>
+                            This mobile game was developed using Unity and C# and compatible for both iOS and Android devices.
+                        </p>
+                    </details>
                 </div>
-                <h4>Ray Tracer</h4>
-                <p class="projectDescription">Desktop Application
-                    <br>
-                    C++, SDL2
-                </p>
-                <details>
-                    <summary class="hover-underline-animation">More Info</summary>
-                    <p>
+                <div class="project">
+                    <iframe class="projectVideo"
+                    src="https://www.youtube.com/embed/DoYj7QOXeLM">
+                    </iframe>
+                    <h4>3D Game Engine</h4>
+                    <p class="projectDescription">Desktop Application
                         <br>
-                        Ray tracing is a rendering technique used to generate images.<br><br>
-                        A ray is traced from the imaginary eye to each pixel in the scene, calculating the colour of the pixel.<br><br>
-                        Multithreading and spatial partitioning have been implemented into this project to increase rendering times.<br><br>
-                        This ray tracer features include: diffuse Lighting, ambient Lighting, specular lighting, reflections and shadows.
+                        C++, OpenGL
                     </p>
-                </details>
-            </div>
-            <div class="project">
-                <iframe class="projectVideo"
-                src="https://www.youtube.com/embed/9YYz9PPFQIU">
-                </iframe>
-                <h4>RUN - A Zombie Shooter</h4>
-                <p class="projectDescription">Desktop Game
-                    <br>
-                    C++, OpenGL
-                </p>
-                <details>
-                    <summary class="hover-underline-animation">More Info</summary>
-                    <p>
+                    <details>
+                        <summary class="hover-underline-animation">More Info</summary>
+                        <p>
+                            <br>
+                            This project has been programmed in C++ and supports a 3D environment using the OpenGL framework.<br><br>
+                            The architecture of the game engine is a component entity system.<br><br>
+                            The game engine has many built in features such as: mesh renderer, texture renderer, input handler, static mesh collision, box collision, sound handler, orthographic GUI capabilities plus many more...<br><br>
+                            Here is a video demonstration of a simple game built to show off the engine.<br><br>
+                        </p>
+                    </details>
+                </div>
+                <div class="project">
+                    <iframe class="projectVideo"
+                    src="https://www.youtube.com/embed/8m52kWKeHdc">
+                    </iframe>
+                    <h4>AI Pathfinding Demo</h4>
+                    <p class="projectDescription">Desktop Application
                         <br>
-                        RUN is a first-person shooter game, set in a dark, misty forest, programmed in C++ using OpenGL.<br><br>
-                        As the player runs through the forest they must dodge not only trees, but the living dead... zombies.<br><br>
-                        The player is equipped with a hand gun with limited ammunition.<br><br>
-                        "Pick ups" such as ammo packs can be found throughout the forest helping the player fight for their survival.
+                        C++, SDL2
                     </p>
-                </details>
-            </div>
-            <div class="project">
-                <iframe class="projectVideo"
-                src="https://www.youtube.com/embed/7Ja3Vih1Pbo">
-                </iframe>
-                <h4>Archer</h4>
-                <p class="projectDescription">Mobile Game
-                    <br>
-                    C#, Unity
-                </p>
-                <details>
-                    <summary class="hover-underline-animation">More Info</summary>
-                    <p>
+                    <details>
+                        <summary class="hover-underline-animation">More Info</summary>
+                        <p>
+                            <br>
+                            This project is programmed in C++ using SDL2.<br><br>
+                            The user places the start (green) and end (red) nodes of the path. The AI will then produce a path using the selected algorithm.<br><br>
+                            Supported path finding algorithms included: Breadth First, Depth First, Best First and A*.<br><br>
+                            The agent will travel along the given path to its destination. This is shown by the white dots. Squares with a blue outline have been searched.<br><br>
+                            Walls can be placed (yellow squares) as well as water (blue squares). Walls cannot be walked through and water adds an extra movement cost therefore avoided if a cheaper path is available (only in A*).
+                        </p>
+                    </details>
+                </div>
+                <div class="project">
+                    <div id="rayTracerContainer" class="imageContainer">
+                        <img id="rayTracerImg" src="resources/RayTracer.png" alt="Ray Tracer image">
+                    </div>
+                    <h4>Ray Tracer</h4>
+                    <p class="projectDescription">Desktop Application
                         <br>
-                        Archer is a mobile game, developed using Unity and C#.<br><br>
-                        The player aims and shoots the endless waves of skeletons by using the mobile phones gyroscope.<br><br>
-                        As the game progresses the player will accumulate skulls. These can be used in the shop to purchase new bow styles.<br><br>
-                        If the score is high enough it is added to the leaderboard rankings.<br><br>
-                        The second mini game uses the accelerometer in order to control an arrow's position.<br><br>
-                        The player must swerve around the human obstacles and collect the skulls.
+                        C++, SDL2
                     </p>
-                </details>
-            </div>
-            <div class="project">
-                <iframe class="projectVideo"
-                src="https://www.youtube.com/embed/d3dve8Ms0Bs">
-                </iframe>
-                <h4>Pharaoh's Tomb</h4>
-                <p class="projectDescription">Desktop Game
-                    <br>
-                    C++, SDL2
-                </p>
-                <details>
-                    <summary class="hover-underline-animation">More Info</summary>
-                    <p>
+                    <details>
+                        <summary class="hover-underline-animation">More Info</summary>
+                        <p>
+                            <br>
+                            Ray tracing is a rendering technique used to generate images.<br><br>
+                            A ray is traced from the imaginary eye to each pixel in the scene, calculating the colour of the pixel.<br><br>
+                            Multithreading and spatial partitioning have been implemented into this project to increase rendering times.<br><br>
+                            This ray tracer features include: diffuse Lighting, ambient Lighting, specular lighting, reflections and shadows.
+                        </p>
+                    </details>
+                </div>
+                <div class="project">
+                    <iframe class="projectVideo"
+                    src="https://www.youtube.com/embed/9YYz9PPFQIU">
+                    </iframe>
+                    <h4>RUN - A Zombie Shooter</h4>
+                    <p class="projectDescription">Desktop Game
                         <br>
-                        Pharaoh's Tomb is a dungeon crawler programmed using C++ and SDL2.<br><br>
-                        The player, an explorer, must fight his way through an ancient tomb consisting of rats and skeletons.<br><br>
-                        Throughout the journey, the explorer may come across various items improving their statistics. The item drop is random allowing each game to provide a different experience.<br><br>
-                        The player may also come across boss enemies such as the King Skeleton.
+                        C++, OpenGL
                     </p>
-                </details>
+                    <details>
+                        <summary class="hover-underline-animation">More Info</summary>
+                        <p>
+                            <br>
+                            RUN is a first-person shooter game, set in a dark, misty forest, programmed in C++ using OpenGL.<br><br>
+                            As the player runs through the forest they must dodge not only trees, but the living dead... zombies.<br><br>
+                            The player is equipped with a hand gun with limited ammunition.<br><br>
+                            "Pick ups" such as ammo packs can be found throughout the forest helping the player fight for their survival.
+                        </p>
+                    </details>
+                </div>
+                <div class="project">
+                    <iframe class="projectVideo"
+                    src="https://www.youtube.com/embed/7Ja3Vih1Pbo">
+                    </iframe>
+                    <h4>Archer</h4>
+                    <p class="projectDescription">Mobile Game
+                        <br>
+                        C#, Unity
+                    </p>
+                    <details>
+                        <summary class="hover-underline-animation">More Info</summary>
+                        <p>
+                            <br>
+                            Archer is a mobile game, developed using Unity and C#.<br><br>
+                            The player aims and shoots the endless waves of skeletons by using the mobile phones gyroscope.<br><br>
+                            As the game progresses the player will accumulate skulls. These can be used in the shop to purchase new bow styles.<br><br>
+                            If the score is high enough it is added to the leaderboard rankings.<br><br>
+                            The second mini game uses the accelerometer in order to control an arrow's position.<br><br>
+                            The player must swerve around the human obstacles and collect the skulls.
+                        </p>
+                    </details>
+                </div>
+                <div class="project">
+                    <iframe class="projectVideo"
+                    src="https://www.youtube.com/embed/d3dve8Ms0Bs">
+                    </iframe>
+                    <h4>Pharaoh's Tomb</h4>
+                    <p class="projectDescription">Desktop Game
+                        <br>
+                        C++, SDL2
+                    </p>
+                    <details>
+                        <summary class="hover-underline-animation">More Info</summary>
+                        <p>
+                            <br>
+                            Pharaoh's Tomb is a dungeon crawler programmed using C++ and SDL2.<br><br>
+                            The player, an explorer, must fight his way through an ancient tomb consisting of rats and skeletons.<br><br>
+                            Throughout the journey, the explorer may come across various items improving their statistics. The item drop is random allowing each game to provide a different experience.<br><br>
+                            The player may also come across boss enemies such as the King Skeleton.
+                        </p>
+                    </details>
+                </div>
             </div>
         </div>
-        <br>
         <!-- Section: About -->
-        <h3 id="section-about">About Me</h3>
-        <div id="about-me">
-            <img src="resources/ProfilePic.jpg" alt="Picture of Archie up a mountain">
-            <p>With a “can-do” attitude and equipped with common sense, given a task and a deadline, I will get the job done.<br><br>
-                My technical expertise shines when developing quick turnaround proof of concepts, internal and external demos or working on cutting-edge R&D innovations.<br><br>
-                Away from development, I truly enjoy engaging with the customers. My high energy and enthusiasm helps build strong and lasting relationships, fostering trust and collaboration. By leveraging these relationships, I ensure a deep understanding of the customers' requirements, assist with software integration and guarantee their satisfaction with the final solution.<br><br>
-                On top of this, I have honed the ability to think on my feet - an essential skill for any presales engineer. I am always ready to tackle any challenge that may come my way, whether it's organising the conversion of a demo undercover 'police car' or devising a quick fix while on site with a customer. These challenges keep the job exciting and allow me to think creatively, making every day different and engaging.<br><br>
-                Outside of work and away from the computer, I stay extremely active and love outdoor activities like running, cycling, paddleboarding, practising yoga and playing football. I'm also known for my adventurous side, which includes mountain climbing, skydiving and the occasional bungee jump!<br><br>
+        <div id="section-about">
+            <h3>About Me</h3>
+            <div id="about-me">
+                <img src="resources/ProfilePic.jpg" alt="Picture of Archie up a mountain">
+                <p>With a “can-do” attitude and equipped with common sense, given a task and a deadline, I will get the job done.<br><br>
+                    My technical expertise shines when developing quick turnaround proof of concepts, internal and external demos or working on cutting-edge R&D innovations.<br><br>
+                    Away from development, I truly enjoy engaging with the customers. My high energy and enthusiasm helps build strong and lasting relationships, fostering trust and collaboration. By leveraging these relationships, I ensure a deep understanding of the customers' requirements, assist with software integration and guarantee their satisfaction with the final solution.<br><br>
+                    On top of this, I have honed the ability to think on my feet - an essential skill for any presales engineer. I am always ready to tackle any challenge that may come my way, whether it's organising the conversion of a demo undercover 'police car' or devising a quick fix while on site with a customer. These challenges keep the job exciting and allow me to think creatively, making every day different and engaging.<br><br>
+                    Outside of work and away from the computer, I stay extremely active and love outdoor activities like running, cycling, paddleboarding, practising yoga and playing football. I'm also known for my adventurous side, which includes mountain climbing, skydiving and the occasional bungee jump!<br><br>
+                </p>
+            </div>
+        </div>
+        <!-- Section Contact -->
+        <div id="section-contact">
+            <h3>Contact</h3>
+            <p>
+                <a href="tel:+447789064539">Phone:</a> (+44) 7789064539<br>
+                <a href="mailto:archie.charach@live.com">Email:</a> archie.charach@live.com<br>
             </p>
         </div>
-        <br>
-        <!-- Section Contact -->
-        <h3 id="section-contact">Contact</h3>
-        <p>
-            <a href="tel:+447789064539">Phone:</a> (+44) 7789064539<br>
-            <a href="mailto:archie.charach@live.com">Email:</a> archie.charach@live.com<br>
-        </p> 
     </main>
 </body>
 </html>
