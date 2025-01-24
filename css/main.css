@@ -176,6 +176,19 @@ details a {
     float: right;
 }
 
+footer {
+    font-size: large;
+    padding-top: 2em;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+footer a {
+    text-decoration: none;
+}
+
 @media (max-width: 460px) {
 
     nav {
@@ -190,16 +203,31 @@ details a {
         font-size: x-large;
     }
 
-    nav ul {
-        order: 1;
-    }
-
     #nav-list {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        align-self: flex-end;
     }
 
-    #nav-list li:first-child {
-        padding-left: 0;
+    #about-me {
+        display: flex;
+        flex-direction: column;
     }
 
+    #about-me img {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+
+    footer {
+        font-size: large;
+        padding-top: 2em;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer > * {
+        padding: 10px;
+    }
 }

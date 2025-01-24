@@ -11,14 +11,9 @@ $("#button-about").click(function() {
     showSection("section-about");
 });
 
-$("#button-contact").click(function() {
-    showSection("section-contact");
-});
-
 function hideSections() {
     $("#section-projects").hide();
     $("#section-about").hide();
-    $("#section-contact").hide();
 }
 
 function showSection(sectionName) {
@@ -30,9 +25,6 @@ function showSection(sectionName) {
             break;
         case "section-about":
             $("#section-about").show();
-            break;
-        case "section-contact":
-            $("#section-contact").show();
             break;
     }
 }
